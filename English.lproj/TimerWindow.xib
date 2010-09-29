@@ -41,7 +41,7 @@
 			<object class="NSWindowTemplate" id="1005">
 				<int key="NSWindowStyleMask">7</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{196, 392}, {315, 118}}</string>
+				<string key="NSWindowRect">{{196, 414}, {246, 96}}</string>
 				<int key="NSWTFlags">544736256</int>
 				<string key="NSWindowTitle">Timey</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -55,7 +55,7 @@
 						<object class="NSTextField" id="323174295">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{17, 31}, {281, 87}}</string>
+							<string key="NSFrame">{{17, 21}, {212, 87}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<int key="NSViewLayerContentsRedrawPolicy">2</int>
 							<bool key="NSEnabled">YES</bool>
@@ -92,7 +92,7 @@
 						<object class="NSButton" id="438591151">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{90, 11}, {30, 23}}</string>
+							<string key="NSFrame">{{56, 7}, {30, 23}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="898893658">
@@ -120,7 +120,7 @@
 						<object class="NSButton" id="277324513">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{125, 11}, {30, 23}}</string>
+							<string key="NSFrame">{{91, 7}, {30, 23}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="885965319">
@@ -144,7 +144,7 @@
 						<object class="NSButton" id="254747006">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{160, 11}, {30, 23}}</string>
+							<string key="NSFrame">{{126, 7}, {30, 23}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="947534885">
@@ -168,7 +168,7 @@
 						<object class="NSButton" id="564045044">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{195, 11}, {30, 23}}</string>
+							<string key="NSFrame">{{161, 7}, {30, 23}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="938376051">
@@ -190,7 +190,7 @@
 							</object>
 						</object>
 					</object>
-					<string key="NSFrameSize">{315, 118}</string>
+					<string key="NSFrameSize">{246, 96}</string>
 					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1680, 1028}}</string>
@@ -447,9 +447,9 @@
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>{{405, 562}, {315, 118}}</string>
+					<string>{{405, 584}, {246, 96}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{405, 562}, {315, 118}}</string>
+					<string>{{405, 584}, {246, 96}}</string>
 					<integer value="1"/>
 					<string>{196, 240}</string>
 					<string>{{202, 428}, {480, 270}}</string>
@@ -476,7 +476,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABBmAAAwugAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABCjAAAwt4AAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 				</object>
@@ -568,13 +568,11 @@
 							<string>playButton</string>
 							<string>reloadButton</string>
 							<string>startButton</string>
-							<string>startingTime</string>
 							<string>stopButton</string>
 							<string>timeLabel</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -595,7 +593,6 @@
 							<string>playButton</string>
 							<string>reloadButton</string>
 							<string>startButton</string>
-							<string>startingTime</string>
 							<string>stopButton</string>
 							<string>timeLabel</string>
 						</object>
@@ -623,10 +620,6 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">startButton</string>
-								<string key="candidateClassName">id</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">startingTime</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBToOneOutletInfo">

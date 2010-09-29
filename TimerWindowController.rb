@@ -4,7 +4,6 @@
 # Created by Jade Meskill on 9/28/10.
 # Copyright 2010 Integrum Technologies, LLC. All rights reserved.
 
-
 class TimerWindowController < NSWindowController
 
   attr_accessor :timeLabel, :startButton, :countdownTimer, :currentTime
@@ -15,15 +14,37 @@ class TimerWindowController < NSWindowController
     window.center
     invalidateTimer
     resetTime
+    addFObservers
     showWindow(sender)
+    setWindowLevel
+  end
+  
+  def addFObservers
+    NSNotificationCenter.defaultCenter.addObserver(self, selector:(:defaultsChanged), name:"NSUserDefaultsDidChangeNotification", object:nil)
+  end
+  
+  def defaultsChanged
+    setWindowLevel
+    invalidateTimer
+    resetTime
+  end
+  
+  def setWindowLevel
+    if NSUserDefaults.standardUserDefaults.boolForKey("stayOnTop")
+      window.level = NSModalPanelWindowLevel
+    else
+      window.level = NSNormalWindowLevel
+    end
   end
 
   def close
     window.close
   end
-
+  
   def updateDisplay
-    m = sprintf("%02i", (currentTime % 3600) / 60)
+    minutes = (currentTime % 3600) / 60
+    minutes = 60 if currentTime > 0 && minutes == 0
+    m = sprintf("%02i", minutes)
     s = sprintf("%02i", (currentTime % 60))
     timeLabel.stringValue = "#{m}:#{s}"
   end
@@ -45,7 +66,6 @@ class TimerWindowController < NSWindowController
     playButton.enabled = false
     stopButton.enabled = true
     pauseButton.enabled = true
-    
   end
   
   def startTimer(sender)
@@ -82,6 +102,6 @@ class TimerWindowController < NSWindowController
     end
     updateDisplay
   end
-
+  
 end
 

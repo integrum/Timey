@@ -11,8 +11,9 @@ class AppDelegate
 
   def self.registrationDefaults
     {
-      "showStatusBarMenu" => true,
-      "defaultStartingTime" => 15
+      "showStatusBarMenu"   => true,
+      "defaultStartingTime" => 15,
+      "stayOnTop"           => false
     }
   end
 

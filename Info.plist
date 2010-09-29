@@ -28,5 +28,7 @@
 	<false/>
 	<key>NSSupportsSuddenTermination</key>
 	<true/>
+	<key>SUFeedURL</key>
+	<string>http://integrumtech.com/Timey/appcast.xml</string>
 </dict>
 </plist>
