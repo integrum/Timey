@@ -50,6 +50,14 @@
 							<string key="NSResourceName">NSMenuMixedState</string>
 						</object>
 					</object>
+					<object class="NSMenuItem" id="1034900485">
+						<reference key="NSMenu" ref="794150256"/>
+						<string key="NSTitle">Show Timey</string>
+						<string key="NSKeyEquiv"/>
+						<int key="NSMnemonicLoc">2147483647</int>
+						<reference key="NSOnImage" ref="770233615"/>
+						<reference key="NSMixedImage" ref="1000819420"/>
+					</object>
 					<object class="NSMenuItem" id="211017107">
 						<reference key="NSMenu" ref="794150256"/>
 						<bool key="NSIsDisabled">YES</bool>
@@ -167,6 +175,22 @@
 					</object>
 					<int key="connectionID">404</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">showPreferences:</string>
+						<reference key="source" ref="1014"/>
+						<reference key="destination" ref="802624985"/>
+					</object>
+					<int key="connectionID">405</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">showTimey:</string>
+						<reference key="source" ref="1014"/>
+						<reference key="destination" ref="1034900485"/>
+					</object>
+					<int key="connectionID">408</int>
+				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -212,6 +236,7 @@
 							<reference ref="609105522"/>
 							<reference ref="211017107"/>
 							<reference ref="802624985"/>
+							<reference ref="1034900485"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -262,12 +287,17 @@
 						<reference key="parent" ref="794150256"/>
 						<string key="objectName">121</string>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">406</int>
+						<reference key="object" ref="1034900485"/>
+						<reference key="parent" ref="794150256"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
 				<string key="-3.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="385.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="389.IBEditorWindowLastContentRect">{{755, 603}, {205, 153}}</string>
+				<string key="389.IBEditorWindowLastContentRect">{{755, 583}, {205, 173}}</string>
 				<string key="389.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="391.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="391.ImportedFromIB2"/>
@@ -285,12 +315,14 @@
 				<integer value="1" key="398.ImportedFromIB2"/>
 				<string key="399.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="399.ImportedFromIB2"/>
+				<string key="406.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<integer value="1" key="406.ImportedFromIB2"/>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">404</int>
+			<int key="maxID">408</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -303,6 +335,7 @@
 						<string key="showPreferences:">id</string>
 						<string key="showReleaseNotesWindow:">id</string>
 						<string key="showTimer:">id</string>
+						<string key="showTimey:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
 						<object class="IBActionInfo" key="refreshFileList:">
@@ -325,15 +358,24 @@
 							<string key="name">showTimer:</string>
 							<string key="candidateClassName">id</string>
 						</object>
+						<object class="IBActionInfo" key="showTimey:">
+							<string key="name">showTimey:</string>
+							<string key="candidateClassName">id</string>
+						</object>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="aboutWindowController">id</string>
+						<string key="preferencesWindowController">id</string>
 						<string key="statusMenu">id</string>
 						<string key="timerWindowController">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="aboutWindowController">
 							<string key="name">aboutWindowController</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="preferencesWindowController">
+							<string key="name">preferencesWindowController</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="statusMenu">
@@ -355,17 +397,12 @@
 					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="fuzzyWindowController">id</string>
-						<string key="preferencesWindowController">id</string>
 						<string key="releaseNotesWindowController">id</string>
 						<string key="welcomeWindowController">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="fuzzyWindowController">
 							<string key="name">fuzzyWindowController</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="preferencesWindowController">
-							<string key="name">preferencesWindowController</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="releaseNotesWindowController">

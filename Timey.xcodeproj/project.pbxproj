@@ -55,6 +55,17 @@
 		BBA63CBF125315F8006B2F7E /* statusItemIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BBA63CBE125315F8006B2F7E /* statusItemIcon.png */; };
 		BBA63CC612531652006B2F7E /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBA63CC012531652006B2F7E /* AboutWindow.xib */; };
 		BBA63CC812531652006B2F7E /* TimerWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBA63CC412531652006B2F7E /* TimerWindow.xib */; };
+		BBA63CDD1253186B006B2F7E /* playback_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = BBA63CD91253186B006B2F7E /* playback_pause.png */; };
+		BBA63CDE1253186B006B2F7E /* playback_play.png in Resources */ = {isa = PBXBuildFile; fileRef = BBA63CDA1253186B006B2F7E /* playback_play.png */; };
+		BBA63CDF1253186B006B2F7E /* playback_reload.png in Resources */ = {isa = PBXBuildFile; fileRef = BBA63CDB1253186B006B2F7E /* playback_reload.png */; };
+		BBA63CE01253186B006B2F7E /* playback_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = BBA63CDC1253186B006B2F7E /* playback_stop.png */; };
+		BBA63D2B12531EDF006B2F7E /* TimerCompleteFullScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBA63D2912531EDF006B2F7E /* TimerCompleteFullScreen.xib */; };
+		BBA63D3212532269006B2F7E /* TimerCompleteController.rb in Resources */ = {isa = PBXBuildFile; fileRef = BBA63D3112532269006B2F7E /* TimerCompleteController.rb */; };
+		BBA63DEE12532F60006B2F7E /* playback_reload_48.png in Resources */ = {isa = PBXBuildFile; fileRef = BBA63DEC12532F60006B2F7E /* playback_reload_48.png */; };
+		BBA63DEF12532F60006B2F7E /* playback_stop_48.png in Resources */ = {isa = PBXBuildFile; fileRef = BBA63DED12532F60006B2F7E /* playback_stop_48.png */; };
+		BBA63E0212533026006B2F7E /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBA63E0012533026006B2F7E /* PreferencesWindow.xib */; };
+		BBA63E0412533049006B2F7E /* PreferencesWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = BBA63E0312533049006B2F7E /* PreferencesWindowController.rb */; };
+		BBA63E8712533A14006B2F7E /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BBA63E8612533A14006B2F7E /* icon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,6 +100,17 @@
 		BBA63CBE125315F8006B2F7E /* statusItemIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusItemIcon.png; sourceTree = "<group>"; };
 		BBA63CC112531652006B2F7E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/AboutWindow.xib; sourceTree = "<group>"; };
 		BBA63CC512531652006B2F7E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/TimerWindow.xib; sourceTree = "<group>"; };
+		BBA63CD91253186B006B2F7E /* playback_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playback_pause.png; sourceTree = "<group>"; };
+		BBA63CDA1253186B006B2F7E /* playback_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playback_play.png; sourceTree = "<group>"; };
+		BBA63CDB1253186B006B2F7E /* playback_reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playback_reload.png; sourceTree = "<group>"; };
+		BBA63CDC1253186B006B2F7E /* playback_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playback_stop.png; sourceTree = "<group>"; };
+		BBA63D2A12531EDF006B2F7E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/TimerCompleteFullScreen.xib; sourceTree = "<group>"; };
+		BBA63D3112532269006B2F7E /* TimerCompleteController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = TimerCompleteController.rb; sourceTree = "<group>"; };
+		BBA63DEC12532F60006B2F7E /* playback_reload_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playback_reload_48.png; sourceTree = "<group>"; };
+		BBA63DED12532F60006B2F7E /* playback_stop_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playback_stop_48.png; sourceTree = "<group>"; };
+		BBA63E0112533026006B2F7E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
+		BBA63E0312533049006B2F7E /* PreferencesWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = PreferencesWindowController.rb; sourceTree = "<group>"; };
+		BBA63E8612533A14006B2F7E /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +132,8 @@
 				BBA63CB8125315E1006B2F7E /* TimerWindowController.rb */,
 				BBA63CB9125315E1006B2F7E /* AppDelegate.rb */,
 				BBA63CBA125315E1006B2F7E /* AboutWindowController.rb */,
+				BBA63D3112532269006B2F7E /* TimerCompleteController.rb */,
+				BBA63E0312533049006B2F7E /* PreferencesWindowController.rb */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -175,12 +199,21 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BBA63E8612533A14006B2F7E /* icon.icns */,
+				BBA63DEC12532F60006B2F7E /* playback_reload_48.png */,
+				BBA63DED12532F60006B2F7E /* playback_stop_48.png */,
+				BBA63CD91253186B006B2F7E /* playback_pause.png */,
+				BBA63CDA1253186B006B2F7E /* playback_play.png */,
+				BBA63CDB1253186B006B2F7E /* playback_reload.png */,
+				BBA63CDC1253186B006B2F7E /* playback_stop.png */,
 				BBA63CC012531652006B2F7E /* AboutWindow.xib */,
 				BBA63CC412531652006B2F7E /* TimerWindow.xib */,
 				BBA63CBE125315F8006B2F7E /* statusItemIcon.png */,
 				2BFA9DA510CDF852007972A1 /* MainMenu.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				BBA63D2912531EDF006B2F7E /* TimerCompleteFullScreen.xib */,
+				BBA63E0012533026006B2F7E /* PreferencesWindow.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -257,6 +290,17 @@
 				BBA63CBF125315F8006B2F7E /* statusItemIcon.png in Resources */,
 				BBA63CC612531652006B2F7E /* AboutWindow.xib in Resources */,
 				BBA63CC812531652006B2F7E /* TimerWindow.xib in Resources */,
+				BBA63CDD1253186B006B2F7E /* playback_pause.png in Resources */,
+				BBA63CDE1253186B006B2F7E /* playback_play.png in Resources */,
+				BBA63CDF1253186B006B2F7E /* playback_reload.png in Resources */,
+				BBA63CE01253186B006B2F7E /* playback_stop.png in Resources */,
+				BBA63D2B12531EDF006B2F7E /* TimerCompleteFullScreen.xib in Resources */,
+				BBA63D3212532269006B2F7E /* TimerCompleteController.rb in Resources */,
+				BBA63DEE12532F60006B2F7E /* playback_reload_48.png in Resources */,
+				BBA63DEF12532F60006B2F7E /* playback_stop_48.png in Resources */,
+				BBA63E0212533026006B2F7E /* PreferencesWindow.xib in Resources */,
+				BBA63E0412533049006B2F7E /* PreferencesWindowController.rb in Resources */,
+				BBA63E8712533A14006B2F7E /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +390,22 @@
 				BBA63CC512531652006B2F7E /* English */,
 			);
 			name = TimerWindow.xib;
+			sourceTree = "<group>";
+		};
+		BBA63D2912531EDF006B2F7E /* TimerCompleteFullScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBA63D2A12531EDF006B2F7E /* English */,
+			);
+			name = TimerCompleteFullScreen.xib;
+			sourceTree = "<group>";
+		};
+		BBA63E0012533026006B2F7E /* PreferencesWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBA63E0112533026006B2F7E /* English */,
+			);
+			name = PreferencesWindow.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

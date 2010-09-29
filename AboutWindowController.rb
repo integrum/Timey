@@ -26,7 +26,7 @@ class AboutWindowController < NSWindowController
   end
 
   def visitWebsite(sender)
-    NSWorkspace.sharedWorkspace.openURL(NSURL.URLWithString("http://integrumtech.com/products/SimpleTimer?r=simple-timer-app"))
+    NSWorkspace.sharedWorkspace.openURL(NSURL.URLWithString("http://integrumtech.com/products/Timey?r=timey-app"))
   end
 
 end

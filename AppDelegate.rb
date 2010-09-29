@@ -7,11 +7,12 @@
 
 class AppDelegate
 
-  attr_accessor :statusMenu, :aboutWindowController, :timerWindowController
+  attr_accessor :statusMenu, :aboutWindowController, :timerWindowController, :preferencesWindowController
 
   def self.registrationDefaults
     {
-      "showStatusBarMenu" => true
+      "showStatusBarMenu" => true,
+      "defaultStartingTime" => 15
     }
   end
 
@@ -55,9 +56,6 @@ class AppDelegate
 
   def showPreferences(sender)
     # TODO: If visible
-    if fuzzyWindowController.respondsToSelector(:close)
-      fuzzyWindowController.close
-    end
     if !@preferencesWindowController
       self.preferencesWindowController =
         windowControllerForNib("PreferencesWindow")
@@ -69,6 +67,10 @@ class AppDelegate
     self.timerWindowController =
       windowControllerForNib("TimerWindow")
     timerWindowController.show(self)
+  end
+  
+  def showTimey(sender)
+    NSApp.activateIgnoringOtherApps(true)
   end
 
   def showReleaseNotesWindow(sender)
@@ -99,7 +101,7 @@ class AppDelegate
   def validateMenuItem(menuItem)
     return true
   end
-
+  
   private
 
   # Given +nibName+, allocate and initialize the appropriate window

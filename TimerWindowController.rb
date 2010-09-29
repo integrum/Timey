@@ -7,40 +7,80 @@
 
 class TimerWindowController < NSWindowController
 
-  attr_accessor :timeLabel, :startButton, :countdownTimer, :startingTime
+  attr_accessor :timeLabel, :startButton, :countdownTimer, :currentTime
+  attr_accessor :playButton, :pauseButton, :stopButton, :reloadButton
 
   def show(sender)
     NSApp.activateIgnoringOtherApps(true)
     window.center
+    invalidateTimer
+    resetTime
     showWindow(sender)
-    @startingTime = 15 * 60
-    populateFields
   end
 
   def close
     window.close
   end
 
-  def populateFields
-    m = sprintf("%02i", (startingTime % 3600) / 60)
-    s = sprintf("%02i", (startingTime % 60))
+  def updateDisplay
+    m = sprintf("%02i", (currentTime % 3600) / 60)
+    s = sprintf("%02i", (currentTime % 60))
     timeLabel.stringValue = "#{m}:#{s}"
   end
   
+  def resetTime
+    @currentTime = NSUserDefaults.standardUserDefaults.integerForKey("defaultStartingTime") * 60
+    updateDisplay
+  end
+  
+  def invalidateTimer
+    @countdownTimer.invalidate if @countdownTimer
+    playButton.enabled = true
+    pauseButton.enabled = false
+    stopButton.enabled = false
+  end
+  
+  def startTime
+    @countdownTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target:self, selector:(:countDown), userInfo:nil, repeats:true)
+    playButton.enabled = false
+    stopButton.enabled = true
+    pauseButton.enabled = true
+    
+  end
+  
   def startTimer(sender)
-    if startButton.title == "Stop"
-      startButton.title = "Start"
-      @countdownTimer.invalidate if @countdownTimer
-    else
-      @countdownTimer.invalidate if @countdownTimer
-      @countdownTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target:self, selector:(:countDown), userInfo:nil, repeats:true)
-      startButton.title = "Stop"
-    end
+    startTime
+  end
+
+  def stopTimer(sender)
+    invalidateTimer
+    resetTime
+  end
+
+  def pauseTimer(sender)
+    invalidateTimer
+  end
+
+  def reloadTimer(sender)
+    invalidateTimer
+    resetTime
+    startTime
+  end
+  
+  def onTimerComplete
+    wc = TimerCompleteController.alloc.initWithWindowNibName("TimerCompleteFullScreen")
+    wc.show(self)
   end
 
   def countDown
-    @startingTime -= 1
-    populateFields
+    @currentTime -= 1
+    if @currentTime <= 0
+      @currentTime = 0
+      invalidateTimer
+      updateDisplay
+      onTimerComplete
+    end
+    updateDisplay
   end
 
 end
