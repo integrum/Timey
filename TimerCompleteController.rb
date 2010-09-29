@@ -12,14 +12,11 @@ class TimerCompleteController < NSWindowController
   def show(sender)
     self.timerWindow = sender
     NSApp.activateIgnoringOtherApps(true)
+    window.center
     showWindow(sender)
-    window.backgroundColor = NSColor.clearColor
-    window.setOpaque(false)
-    window.contentView.enterFullScreenMode(NSScreen.mainScreen, withOptions:nil)
   end
 
   def close
-    window.contentView.exitFullScreenModeWithOptions(nil)
     window.close
   end
 
@@ -31,6 +28,12 @@ class TimerCompleteController < NSWindowController
   def reloadTimer(sender)
     close
     timerWindow.reloadTimer(sender)
+  end
+
+  # Custom windows that use the NSBorderlessWindowMask can't become key by default.  Therefore, controls in such windows
+  # won't ever be enabled by default. Thus, we override this method to change that.
+  def canBecomeKeyWindow
+    true
   end
 
 end

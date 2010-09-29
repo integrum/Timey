@@ -11,7 +11,7 @@ class TimerWindowController < NSWindowController
 
   def show(sender)
     NSApp.activateIgnoringOtherApps(true)
-    window.center
+    window
     invalidateTimer
     resetTime
     addFObservers
