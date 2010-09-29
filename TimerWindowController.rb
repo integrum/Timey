@@ -43,9 +43,10 @@ class TimerWindowController < NSWindowController
   
   def updateDisplay
     minutes = (currentTime % 3600) / 60
-    minutes = 60 if currentTime > 0 && minutes == 0
+    seconds = (currentTime % 60)
+    minutes = 60 if currentTime == 3600
     m = sprintf("%02i", minutes)
-    s = sprintf("%02i", (currentTime % 60))
+    s = sprintf("%02i", seconds)
     timeLabel.stringValue = "#{m}:#{s}"
   end
   
