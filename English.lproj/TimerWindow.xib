@@ -87,7 +87,7 @@
 						<object class="NSButton" id="438591151">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{-5, 51}, {30, 23}}</string>
+							<string key="NSFrame">{{1, 47}, {30, 23}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="898893658">
@@ -115,7 +115,7 @@
 						<object class="NSButton" id="277324513">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{-5, 31}, {30, 23}}</string>
+							<string key="NSFrame">{{1, 27}, {30, 23}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="885965319">
@@ -139,7 +139,7 @@
 						<object class="NSButton" id="254747006">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{-5, 11}, {30, 23}}</string>
+							<string key="NSFrame">{{1, 7}, {30, 23}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="947534885">
@@ -163,7 +163,7 @@
 						<object class="NSButton" id="564045044">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{216, 51}, {30, 23}}</string>
+							<string key="NSFrame">{{216, 27}, {30, 23}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="938376051">
@@ -442,9 +442,9 @@
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>{{877, 638}, {246, 73}}</string>
+					<string>{{586, 589}, {246, 73}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{877, 638}, {246, 73}}</string>
+					<string>{{586, 589}, {246, 73}}</string>
 					<integer value="1"/>
 					<string>{196, 240}</string>
 					<string>{{202, 428}, {480, 270}}</string>
@@ -466,12 +466,12 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDWAAAwr4AAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABDWAAAwkwAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABCjAAAwt4AAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABBiAAAwqYAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 				</object>
