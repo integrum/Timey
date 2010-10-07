@@ -6,14 +6,16 @@
 
 class TimerWindowController < NSWindowController
 
-  attr_accessor :timeLabel, :startButton, :countdownTimer, :currentTime
+  attr_accessor :timeLabel, :startButton, :countdownTimer
   attr_accessor :playButton, :pauseButton, :stopButton, :reloadButton
+  attr_accessor :appDelegate
 
   def show(sender)
+    self.appDelegate = sender
     NSApp.activateIgnoringOtherApps(true)
     window
     invalidateTimer
-    resetTime
+    updateDisplay
     addFObservers
     showWindow(sender)
     setWindowLevel
@@ -27,6 +29,7 @@ class TimerWindowController < NSWindowController
     setWindowLevel
     invalidateTimer
     resetTime
+    appDelegate.updateStatusBar
   end
   
   def setWindowLevel
@@ -42,16 +45,12 @@ class TimerWindowController < NSWindowController
   end
   
   def updateDisplay
-    minutes = (currentTime % 3600) / 60
-    seconds = (currentTime % 60)
-    minutes = 60 if currentTime == 3600
-    m = sprintf("%02i", minutes)
-    s = sprintf("%02i", seconds)
-    timeLabel.stringValue = "#{m}:#{s}"
+    timeLabel.stringValue = appDelegate.currentTimeAsString
+    appDelegate.updateStatusBar
   end
   
   def resetTime
-    @currentTime = NSUserDefaults.standardUserDefaults.integerForKey("defaultStartingTime") * 60
+    appDelegate.resetCurrentTime
     updateDisplay
   end
   
@@ -63,6 +62,7 @@ class TimerWindowController < NSWindowController
   end
   
   def startTime
+    close if NSUserDefaults.standardUserDefaults.boolForKey("hideOnTimerStart")
     @countdownTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target:self, selector:(:countDown), userInfo:nil, repeats:true)
     playButton.enabled = false
     stopButton.enabled = true
@@ -94,9 +94,9 @@ class TimerWindowController < NSWindowController
   end
 
   def countDown
-    @currentTime -= 1
-    if @currentTime <= 0
-      @currentTime = 0
+    appDelegate.currentTime -= 1
+    if appDelegate.currentTime <= 0
+      appDelegate.currentTime = 0
       invalidateTimer
       updateDisplay
       onTimerComplete

@@ -29,7 +29,6 @@ class PreferencesWindowController < NSWindowController
     window.makeFirstResponder(nil)
   end
 
-
   def close
     window.close
   end

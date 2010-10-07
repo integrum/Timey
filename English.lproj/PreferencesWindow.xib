@@ -198,7 +198,7 @@
 						<reference key="NSSuperview" ref="1036256501"/>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSSliderCell" key="NSCell" id="341860871">
-							<int key="NSCellFlags">-2080244224</int>
+							<int key="NSCellFlags">-2079981824</int>
 							<int key="NSCellFlags2">32768</int>
 							<string key="NSContents"/>
 							<reference key="NSControlView" ref="137494878"/>
@@ -739,22 +739,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">selectedTag: values.menuBarDisplayType</string>
-						<reference key="source" ref="594072178"/>
-						<reference key="destination" ref="732075047"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="594072178"/>
-							<reference key="NSDestination" ref="732075047"/>
-							<string key="NSLabel">selectedTag: values.menuBarDisplayType</string>
-							<string key="NSBinding">selectedTag</string>
-							<string key="NSKeyPath">values.menuBarDisplayType</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">198</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: values.hideOnTimerStart</string>
 						<reference key="source" ref="1040212207"/>
 						<reference key="destination" ref="732075047"/>
@@ -840,6 +824,35 @@
 						<reference key="destination" ref="326841614"/>
 					</object>
 					<int key="connectionID">209</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">selectedTag: values.menuBarDisplayType</string>
+						<reference key="source" ref="594072178"/>
+						<reference key="destination" ref="732075047"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="594072178"/>
+							<reference key="NSDestination" ref="732075047"/>
+							<string key="NSLabel">selectedTag: values.menuBarDisplayType</string>
+							<string key="NSBinding">selectedTag</string>
+							<string key="NSKeyPath">values.menuBarDisplayType</string>
+							<object class="NSDictionary" key="NSOptions">
+								<bool key="EncodedWithXMLCoder">YES</bool>
+								<object class="NSArray" key="dict.sortedKeys">
+									<bool key="EncodedWithXMLCoder">YES</bool>
+									<string>NSConditionallySetsEnabled</string>
+									<string>NSValidatesImmediately</string>
+								</object>
+								<object class="NSMutableArray" key="dict.values">
+									<bool key="EncodedWithXMLCoder">YES</bool>
+									<boolean value="NO"/>
+									<boolean value="YES"/>
+								</object>
+							</object>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">211</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1438,7 +1451,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">209</int>
+			<int key="maxID">211</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
