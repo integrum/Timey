@@ -13,7 +13,9 @@ class AppDelegate
     {
       "showStatusBarMenu"   => true,
       "defaultStartingTime" => 15,
-      "stayOnTop"           => false
+      "stayOnTop"           => false,
+      "hideOnTimerStart"    => false,
+      "menuBarDisplayType"  => 0
     }
   end
 

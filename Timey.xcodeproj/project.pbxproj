@@ -60,6 +60,10 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		BB354D3E125E349000635027 /* 95-equalizer-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB354D3D125E349000635027 /* 95-equalizer-2x.png */; };
+		BB354D40125E349E00635027 /* 26-bandaid-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB354D3F125E349E00635027 /* 26-bandaid-2x.png */; };
+		BB354D42125E34D300635027 /* 78-stopwach-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB354D41125E34D300635027 /* 78-stopwach-2x.png */; };
+		BB354DB9125E39DD00635027 /* NSWindowControllerHelper.rb in Resources */ = {isa = PBXBuildFile; fileRef = BB354DB8125E39DD00635027 /* NSWindowControllerHelper.rb */; };
 		BB6E4A551253D40F00E65243 /* playback_reload_48.png in Resources */ = {isa = PBXBuildFile; fileRef = BB6E4A531253D40F00E65243 /* playback_reload_48.png */; };
 		BB6E4A561253D40F00E65243 /* playback_stop_48.png in Resources */ = {isa = PBXBuildFile; fileRef = BB6E4A541253D40F00E65243 /* playback_stop_48.png */; };
 		BBA63CBB125315E1006B2F7E /* TimerWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = BBA63CB8125315E1006B2F7E /* TimerWindowController.rb */; };
@@ -113,6 +117,10 @@
 		4DE3BE130D8651D900ECA448 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = /Library/Frameworks/MacRuby.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Timey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB354D3D125E349000635027 /* 95-equalizer-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "95-equalizer-2x.png"; sourceTree = "<group>"; };
+		BB354D3F125E349E00635027 /* 26-bandaid-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "26-bandaid-2x.png"; sourceTree = "<group>"; };
+		BB354D41125E34D300635027 /* 78-stopwach-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "78-stopwach-2x.png"; sourceTree = "<group>"; };
+		BB354DB8125E39DD00635027 /* NSWindowControllerHelper.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = NSWindowControllerHelper.rb; path = Classes/Helpers/NSWindowControllerHelper.rb; sourceTree = "<group>"; };
 		BB6E4A531253D40F00E65243 /* playback_reload_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playback_reload_48.png; sourceTree = "<group>"; };
 		BB6E4A541253D40F00E65243 /* playback_stop_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playback_stop_48.png; sourceTree = "<group>"; };
 		BBA63CB8125315E1006B2F7E /* TimerWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = TimerWindowController.rb; sourceTree = "<group>"; };
@@ -155,15 +163,11 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BBA63CB8125315E1006B2F7E /* TimerWindowController.rb */,
+				BB354DC3125E3A1C00635027 /* Views */,
+				BB354DB6125E39BF00635027 /* Models */,
+				BB354DB5125E39B900635027 /* Controllers */,
+				BB354DB4125E39AE00635027 /* Helpers */,
 				BBA63CB9125315E1006B2F7E /* AppDelegate.rb */,
-				BBA63CBA125315E1006B2F7E /* AboutWindowController.rb */,
-				BBA63D3112532269006B2F7E /* TimerCompleteController.rb */,
-				BBA63E0312533049006B2F7E /* PreferencesWindowController.rb */,
-				BBAF5B9F1253B532009551C3 /* CustomWindow.rb */,
-				BBAF5BA11253B53D009551C3 /* CustomView.rb */,
-				BBAF5BB21253B5B5009551C3 /* Controller.rb */,
-				BBAF5BF81253B89A009551C3 /* CustomTimerWindow.rb */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -230,6 +234,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BB354D41125E34D300635027 /* 78-stopwach-2x.png */,
+				BB354D3D125E349000635027 /* 95-equalizer-2x.png */,
+				BB354D3F125E349E00635027 /* 26-bandaid-2x.png */,
 				BB6E4A531253D40F00E65243 /* playback_reload_48.png */,
 				BB6E4A541253D40F00E65243 /* playback_stop_48.png */,
 				BBAF5B341253AF7B009551C3 /* dsa_pub.pem */,
@@ -257,6 +264,43 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB354DB4125E39AE00635027 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BB354DB8125E39DD00635027 /* NSWindowControllerHelper.rb */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		BB354DB5125E39B900635027 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BBA63CB8125315E1006B2F7E /* TimerWindowController.rb */,
+				BBA63E0312533049006B2F7E /* PreferencesWindowController.rb */,
+				BBA63D3112532269006B2F7E /* TimerCompleteController.rb */,
+				BBA63CBA125315E1006B2F7E /* AboutWindowController.rb */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BB354DB6125E39BF00635027 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BBAF5B9F1253B532009551C3 /* CustomWindow.rb */,
+				BBAF5BB21253B5B5009551C3 /* Controller.rb */,
+				BBAF5BF81253B89A009551C3 /* CustomTimerWindow.rb */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BB354DC3125E3A1C00635027 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBAF5BA11253B53D009551C3 /* CustomView.rb */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +383,10 @@
 				BBAF5BF91253B89A009551C3 /* CustomTimerWindow.rb in Resources */,
 				BB6E4A551253D40F00E65243 /* playback_reload_48.png in Resources */,
 				BB6E4A561253D40F00E65243 /* playback_stop_48.png in Resources */,
+				BB354D3E125E349000635027 /* 95-equalizer-2x.png in Resources */,
+				BB354D40125E349E00635027 /* 26-bandaid-2x.png in Resources */,
+				BB354D42125E34D300635027 /* 78-stopwach-2x.png in Resources */,
+				BB354DB9125E39DD00635027 /* NSWindowControllerHelper.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
