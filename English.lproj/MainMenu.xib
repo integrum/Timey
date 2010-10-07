@@ -514,9 +514,9 @@
 							<reference ref="388543680"/>
 							<reference ref="857920338"/>
 							<reference ref="609105522"/>
-							<reference ref="211017107"/>
 							<reference ref="802624985"/>
 							<reference ref="1034900485"/>
+							<reference ref="211017107"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -554,11 +554,6 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">397</int>
 						<reference key="object" ref="609105522"/>
-						<reference key="parent" ref="794150256"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">398</int>
-						<reference key="object" ref="211017107"/>
 						<reference key="parent" ref="794150256"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -747,6 +742,11 @@
 						<reference key="object" ref="316032169"/>
 						<reference key="parent" ref="619497616"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">505</int>
+						<reference key="object" ref="211017107"/>
+						<reference key="parent" ref="794150256"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -766,8 +766,6 @@
 				<integer value="1" key="396.ImportedFromIB2"/>
 				<string key="397.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="397.ImportedFromIB2"/>
-				<string key="398.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<integer value="1" key="398.ImportedFromIB2"/>
 				<string key="399.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="399.ImportedFromIB2"/>
 				<string key="406.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -833,12 +831,14 @@
 				<integer value="1" key="501.ImportedFromIB2"/>
 				<string key="502.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="502.ImportedFromIB2"/>
+				<string key="505.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<integer value="1" key="505.ImportedFromIB2"/>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">504</int>
+			<int key="maxID">509</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -879,28 +879,18 @@
 					<string key="className">AppDelegate</string>
 					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="refreshFileList:">id</string>
 						<string key="showAbout:">id</string>
 						<string key="showPreferences:">id</string>
-						<string key="showReleaseNotesWindow:">id</string>
 						<string key="showTimer:">id</string>
 						<string key="showTimey:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="refreshFileList:">
-							<string key="name">refreshFileList:</string>
-							<string key="candidateClassName">id</string>
-						</object>
 						<object class="IBActionInfo" key="showAbout:">
 							<string key="name">showAbout:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="showPreferences:">
 							<string key="name">showPreferences:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="showReleaseNotesWindow:">
-							<string key="name">showReleaseNotesWindow:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="showTimer:">
@@ -914,7 +904,10 @@
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="aboutWindowController">id</string>
+						<string key="currentTime">id</string>
 						<string key="preferencesWindowController">id</string>
+						<string key="statusBarMenuType">id</string>
+						<string key="statusItem">id</string>
 						<string key="statusMenu">id</string>
 						<string key="timerWindowController">id</string>
 					</dictionary>
@@ -923,8 +916,20 @@
 							<string key="name">aboutWindowController</string>
 							<string key="candidateClassName">id</string>
 						</object>
+						<object class="IBToOneOutletInfo" key="currentTime">
+							<string key="name">currentTime</string>
+							<string key="candidateClassName">id</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="preferencesWindowController">
 							<string key="name">preferencesWindowController</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="statusBarMenuType">
+							<string key="name">statusBarMenuType</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="statusItem">
+							<string key="name">statusItem</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="statusMenu">
@@ -971,17 +976,69 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">PreferencesWindowController</string>
 					<string key="superclassName">NSWindowController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">show:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">show:</string>
-						<object class="IBActionInfo" key="NS.object.0">
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="show:">id</string>
+						<string key="showAppearanceView:">id</string>
+						<string key="showTimerView:">id</string>
+						<string key="showUpdateView:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="show:">
 							<string key="name">show:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-					</object>
+						<object class="IBActionInfo" key="showAppearanceView:">
+							<string key="name">showAppearanceView:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="showTimerView:">
+							<string key="name">showTimerView:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="showUpdateView:">
+							<string key="name">showUpdateView:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="appearanceToolbarItem">id</string>
+						<string key="appearanceView">id</string>
+						<string key="currentView">id</string>
+						<string key="timerToolbarItem">id</string>
+						<string key="timerView">id</string>
+						<string key="updateToolbarItem">id</string>
+						<string key="updateView">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="appearanceToolbarItem">
+							<string key="name">appearanceToolbarItem</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="appearanceView">
+							<string key="name">appearanceView</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="currentView">
+							<string key="name">currentView</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="timerToolbarItem">
+							<string key="name">timerToolbarItem</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="timerView">
+							<string key="name">timerView</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="updateToolbarItem">
+							<string key="name">updateToolbarItem</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="updateView">
+							<string key="name">updateView</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">PreferencesWindowController.rb</string>
@@ -1071,8 +1128,8 @@
 						</object>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="appDelegate">id</string>
 						<string key="countdownTimer">id</string>
-						<string key="currentTime">id</string>
 						<string key="pauseButton">id</string>
 						<string key="playButton">id</string>
 						<string key="reloadButton">id</string>
@@ -1081,12 +1138,12 @@
 						<string key="timeLabel">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="countdownTimer">
-							<string key="name">countdownTimer</string>
+						<object class="IBToOneOutletInfo" key="appDelegate">
+							<string key="name">appDelegate</string>
 							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBToOneOutletInfo" key="currentTime">
-							<string key="name">currentTime</string>
+						<object class="IBToOneOutletInfo" key="countdownTimer">
+							<string key="name">countdownTimer</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="pauseButton">

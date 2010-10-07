@@ -65,6 +65,7 @@
 		BB354D42125E34D300635027 /* 78-stopwach-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB354D41125E34D300635027 /* 78-stopwach-2x.png */; };
 		BB354DB9125E39DD00635027 /* NSWindowControllerHelper.rb in Resources */ = {isa = PBXBuildFile; fileRef = BB354DB8125E39DD00635027 /* NSWindowControllerHelper.rb */; };
 		BB354EA7125E641C00635027 /* statusItemIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB354EA6125E641C00635027 /* statusItemIcon.png */; };
+		BB354EF4125E6DA600635027 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB354EF3125E6DA600635027 /* LICENSE.txt */; };
 		BB6E4A551253D40F00E65243 /* playback_reload_48.png in Resources */ = {isa = PBXBuildFile; fileRef = BB6E4A531253D40F00E65243 /* playback_reload_48.png */; };
 		BB6E4A561253D40F00E65243 /* playback_stop_48.png in Resources */ = {isa = PBXBuildFile; fileRef = BB6E4A541253D40F00E65243 /* playback_stop_48.png */; };
 		BBA63CBB125315E1006B2F7E /* TimerWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = BBA63CB8125315E1006B2F7E /* TimerWindowController.rb */; };
@@ -83,10 +84,8 @@
 		BBA63E8712533A14006B2F7E /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BBA63E8612533A14006B2F7E /* icon.icns */; };
 		BBAF5A9A1253AC03009551C3 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAF5A991253AC03009551C3 /* Sparkle.framework */; };
 		BBAF5AA31253AC05009551C3 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAF5A991253AC03009551C3 /* Sparkle.framework */; };
-		BBAF5B351253AF7B009551C3 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = BBAF5B341253AF7B009551C3 /* dsa_pub.pem */; };
 		BBAF5BA01253B532009551C3 /* CustomWindow.rb in Resources */ = {isa = PBXBuildFile; fileRef = BBAF5B9F1253B532009551C3 /* CustomWindow.rb */; };
 		BBAF5BA21253B53D009551C3 /* CustomView.rb in Resources */ = {isa = PBXBuildFile; fileRef = BBAF5BA11253B53D009551C3 /* CustomView.rb */; };
-		BBAF5BB31253B5B5009551C3 /* Controller.rb in Resources */ = {isa = PBXBuildFile; fileRef = BBAF5BB21253B5B5009551C3 /* Controller.rb */; };
 		BBAF5BF91253B89A009551C3 /* CustomTimerWindow.rb in Resources */ = {isa = PBXBuildFile; fileRef = BBAF5BF81253B89A009551C3 /* CustomTimerWindow.rb */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +121,7 @@
 		BB354D41125E34D300635027 /* 78-stopwach-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "78-stopwach-2x.png"; sourceTree = "<group>"; };
 		BB354DB8125E39DD00635027 /* NSWindowControllerHelper.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = NSWindowControllerHelper.rb; path = Classes/Helpers/NSWindowControllerHelper.rb; sourceTree = "<group>"; };
 		BB354EA6125E641C00635027 /* statusItemIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusItemIcon.png; sourceTree = "<group>"; };
+		BB354EF3125E6DA600635027 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		BB6E4A531253D40F00E65243 /* playback_reload_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playback_reload_48.png; sourceTree = "<group>"; };
 		BB6E4A541253D40F00E65243 /* playback_stop_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playback_stop_48.png; sourceTree = "<group>"; };
 		BBA63CB8125315E1006B2F7E /* TimerWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = TimerWindowController.rb; sourceTree = "<group>"; };
@@ -139,10 +139,8 @@
 		BBA63E0312533049006B2F7E /* PreferencesWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = PreferencesWindowController.rb; sourceTree = "<group>"; };
 		BBA63E8612533A14006B2F7E /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		BBAF5A991253AC03009551C3 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
-		BBAF5B341253AF7B009551C3 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		BBAF5B9F1253B532009551C3 /* CustomWindow.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = CustomWindow.rb; path = Classes/CustomWindow.rb; sourceTree = "<group>"; };
 		BBAF5BA11253B53D009551C3 /* CustomView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = CustomView.rb; sourceTree = "<group>"; };
-		BBAF5BB21253B5B5009551C3 /* Controller.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = Controller.rb; path = Classes/Controller.rb; sourceTree = "<group>"; };
 		BBAF5BF81253B89A009551C3 /* CustomTimerWindow.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = CustomTimerWindow.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -234,13 +232,13 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BB354EF3125E6DA600635027 /* LICENSE.txt */,
 				BB354EA6125E641C00635027 /* statusItemIcon.png */,
 				BB354D41125E34D300635027 /* 78-stopwach-2x.png */,
 				BB354D3D125E349000635027 /* 95-equalizer-2x.png */,
 				BB354D3F125E349E00635027 /* 26-bandaid-2x.png */,
 				BB6E4A531253D40F00E65243 /* playback_reload_48.png */,
 				BB6E4A541253D40F00E65243 /* playback_stop_48.png */,
-				BBAF5B341253AF7B009551C3 /* dsa_pub.pem */,
 				BBA63E8612533A14006B2F7E /* icon.icns */,
 				BBA63CD91253186B006B2F7E /* playback_pause.png */,
 				BBA63CDA1253186B006B2F7E /* playback_play.png */,
@@ -289,7 +287,6 @@
 			isa = PBXGroup;
 			children = (
 				BBAF5B9F1253B532009551C3 /* CustomWindow.rb */,
-				BBAF5BB21253B5B5009551C3 /* Controller.rb */,
 				BBAF5BF81253B89A009551C3 /* CustomTimerWindow.rb */,
 			);
 			name = Models;
@@ -375,10 +372,8 @@
 				BBA63E0212533026006B2F7E /* PreferencesWindow.xib in Resources */,
 				BBA63E0412533049006B2F7E /* PreferencesWindowController.rb in Resources */,
 				BBA63E8712533A14006B2F7E /* icon.icns in Resources */,
-				BBAF5B351253AF7B009551C3 /* dsa_pub.pem in Resources */,
 				BBAF5BA01253B532009551C3 /* CustomWindow.rb in Resources */,
 				BBAF5BA21253B53D009551C3 /* CustomView.rb in Resources */,
-				BBAF5BB31253B5B5009551C3 /* Controller.rb in Resources */,
 				BBAF5BF91253B89A009551C3 /* CustomTimerWindow.rb in Resources */,
 				BB6E4A551253D40F00E65243 /* playback_reload_48.png in Resources */,
 				BB6E4A561253D40F00E65243 /* playback_stop_48.png in Resources */,
@@ -387,6 +382,7 @@
 				BB354D42125E34D300635027 /* 78-stopwach-2x.png in Resources */,
 				BB354DB9125E39DD00635027 /* NSWindowControllerHelper.rb in Resources */,
 				BB354EA7125E641C00635027 /* statusItemIcon.png in Resources */,
+				BB354EF4125E6DA600635027 /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

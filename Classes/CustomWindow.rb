@@ -1,13 +1,6 @@
-# Description:  This is the implementation file for the CustomWindow class, which is our subclass of NSWindow.  We need to subclass
-#               NSWindow in order to configure the window properly in #initWithContentRect(contentRect, styleMask:aStyle, backing:bufferingType, defer:flag)
-#               to have a custom shape and be transparent.  We also override the #mouseDown and #mouseDragged metohds,
-#               to allow for dragging the window by clicking on its content area (since it doesn't have a title bar to drag).
-
 class CustomWindow < NSWindow
   attr_accessor :initialLocation
 
-  # In Interface Builder we set CustomWindow to be the class for our window, so our own initializer is called here.
-  # the original method is being extended but still called thanks to the `super` call
   def initWithContentRect(contentRect, styleMask:aStyle, backing:bufferingType, defer:flag)
     # Call NSWindow's version of this function, but pass in the all-important value of NSBorderlessWindowMask
     #for the styleMask so that the window doesn't have a title bar
