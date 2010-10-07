@@ -1,5 +1,5 @@
 # AppDelegate.rb
-# SimpleTimer
+# Timey
 #
 # Created by Jade Meskill on 9/28/10.
 # Copyright 2010 Integrum Technologies, LLC. All rights reserved.
