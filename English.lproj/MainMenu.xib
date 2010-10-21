@@ -11,8 +11,8 @@
 			<string key="NS.object.0">804</string>
 		</object>
 		<array class="NSMutableArray" key="IBDocument.EditedObjectIDs">
-			<integer value="426"/>
 			<integer value="389"/>
+			<integer value="426"/>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -279,6 +279,14 @@
 						<reference key="NSOnImage" ref="308517244"/>
 						<reference key="NSMixedImage" ref="522501258"/>
 					</object>
+					<object class="NSMenuItem" id="195541834">
+						<reference key="NSMenu" ref="794150256"/>
+						<string key="NSTitle">Hide Timey</string>
+						<string key="NSKeyEquiv"/>
+						<int key="NSMnemonicLoc">2147483647</int>
+						<reference key="NSOnImage" ref="308517244"/>
+						<reference key="NSMixedImage" ref="522501258"/>
+					</object>
 					<object class="NSMenuItem" id="211017107">
 						<reference key="NSMenu" ref="794150256"/>
 						<bool key="NSIsDisabled">YES</bool>
@@ -471,6 +479,14 @@
 					</object>
 					<int key="connectionID">504</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">hideTimey:</string>
+						<reference key="source" ref="1014"/>
+						<reference key="destination" ref="195541834"/>
+					</object>
+					<int key="connectionID">512</int>
+				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -517,6 +533,7 @@
 							<reference ref="802624985"/>
 							<reference ref="1034900485"/>
 							<reference ref="211017107"/>
+							<reference ref="195541834"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -747,12 +764,17 @@
 						<reference key="object" ref="211017107"/>
 						<reference key="parent" ref="794150256"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">510</int>
+						<reference key="object" ref="195541834"/>
+						<reference key="parent" ref="794150256"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
 				<string key="-3.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="385.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="389.IBEditorWindowLastContentRect">{{755, 583}, {205, 173}}</string>
+				<string key="389.IBEditorWindowLastContentRect">{{755, 563}, {205, 193}}</string>
 				<string key="389.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="391.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="391.ImportedFromIB2"/>
@@ -833,12 +855,14 @@
 				<integer value="1" key="502.ImportedFromIB2"/>
 				<string key="505.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="505.ImportedFromIB2"/>
+				<string key="510.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<integer value="1" key="510.ImportedFromIB2"/>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">509</int>
+			<int key="maxID">512</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -879,12 +903,17 @@
 					<string key="className">AppDelegate</string>
 					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="hideTimey:">id</string>
 						<string key="showAbout:">id</string>
 						<string key="showPreferences:">id</string>
 						<string key="showTimer:">id</string>
 						<string key="showTimey:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="hideTimey:">
+							<string key="name">hideTimey:</string>
+							<string key="candidateClassName">id</string>
+						</object>
 						<object class="IBActionInfo" key="showAbout:">
 							<string key="name">showAbout:</string>
 							<string key="candidateClassName">id</string>

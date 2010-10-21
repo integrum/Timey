@@ -16,20 +16,22 @@ class TimerWindowController < NSWindowController
     window
     invalidateTimer
     updateDisplay
-    addFObservers
+    addObservers
     showWindow(sender)
     setWindowLevel
   end
   
-  def addFObservers
+  def addObservers
     NSNotificationCenter.defaultCenter.addObserver(self, selector:(:defaultsChanged), name:"NSUserDefaultsDidChangeNotification", object:nil)
   end
   
   def defaultsChanged
     setWindowLevel
-    invalidateTimer
-    resetTime
     appDelegate.updateStatusBar
+    if appDelegate.origStartingTime != NSUserDefaults.standardUserDefaults.integerForKey("defaultStartingTime")
+      invalidateTimer
+      resetTime
+    end
   end
   
   def setWindowLevel

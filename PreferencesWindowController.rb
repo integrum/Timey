@@ -25,7 +25,6 @@ class PreferencesWindowController < NSWindowController
   end
   
   def windowDidResignKey(notification)
-    # TODO: Text fields should resign focus and file lists should be reloaded
     window.makeFirstResponder(nil)
   end
 
