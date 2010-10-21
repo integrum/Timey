@@ -15,6 +15,10 @@ class TimerCompleteController < NSWindowController
     window.center
     showWindow(sender)
   end
+  
+  def windowDidLoad
+    displayLabel.title = NSUserDefaults.standardUserDefaults.stringForKey("timerMessage") if displayLabel
+  end
 
   def close
     window.close

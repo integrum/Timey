@@ -40,7 +40,8 @@ class AppDelegate
       "defaultStartingTime" => 15,
       "stayOnTop"           => false,
       "hideOnTimerStart"    => false,
-      "menuBarDisplayType"  => 0
+      "menuBarDisplayType"  => 0,
+      "timerMessage"        => "Timey Time!"
     }
   end
 
@@ -124,7 +125,7 @@ class AppDelegate
   
   def resetCurrentTime
     @origStartingTime = NSUserDefaults.standardUserDefaults.integerForKey("defaultStartingTime")
-    @currentTime = @origStartingTime * 60
+    @currentTime = @origStartingTime * 60 * 0
   end
   
   private
