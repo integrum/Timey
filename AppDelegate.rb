@@ -125,7 +125,7 @@ class AppDelegate
   
   def resetCurrentTime
     @origStartingTime = NSUserDefaults.standardUserDefaults.integerForKey("defaultStartingTime")
-    @currentTime = @origStartingTime * 60 * 0
+    @currentTime = @origStartingTime * 60
   end
   
   private
