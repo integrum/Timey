@@ -8,8 +8,8 @@ require 'NSWindowControllerHelper'
 
 class PreferencesWindowController < NSWindowController
 
-  attr_accessor :updateView, :timerView, :appearanceView
-  attr_accessor :updateToolbarItem, :timerToolbarItem, :appearanceToolbarItem
+  attr_accessor :timerView, :appearanceView
+  attr_accessor :timerToolbarItem, :appearanceToolbarItem
   attr_accessor :currentView
   
   include NSWindowControllerHelper
@@ -34,10 +34,6 @@ class PreferencesWindowController < NSWindowController
   
   def showAppearanceView(sender)
     switchToView(appearanceView, item:appearanceToolbarItem, animate:false)  
-  end
-  
-  def showUpdateView(sender)
-    switchToView(updateView, item:updateToolbarItem, animate:false)  
   end
   
   def showTimerView(sender)
